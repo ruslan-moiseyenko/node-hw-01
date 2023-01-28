@@ -1,0 +1,29 @@
+{
+  "name": "hw-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "start:dev": "npx nodemon server",
+    "lint": "npx eslint src server.js",
+    "lint:fix": "npx eslint --fix src server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruslan-moiseyenko/node-hw-01.git"
+  },
+  "author": "Ruslan Moiseenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruslan-moiseyenko/node-hw-01/issues"
+  },
+  "homepage": "https://github.com/ruslan-moiseyenko/node-hw-01#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
