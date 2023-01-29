@@ -5,6 +5,7 @@ const path = require("path");
 const contactsPath = path.resolve("./db/contacts.json");
 
 // TODO: задокументировать каждую функцию
+
 function listContacts() {
   (async () => {
     try {
@@ -71,7 +72,14 @@ function addContact(name, email, phone) {
   })();
 }
 
+module.exports = {
+  listContacts,
+  getContactById,
+  removeContact,
+  addContact
+};
+
 //console.log(listContacts());
 //console.log(getContactById(1));
 //removeContact(1);
-addContact("Ruslan", "ruscom5@gmail.com", "0675743133");
+//addContact("Ruslan", "ruscom5@gmail.com", "0675743133");
